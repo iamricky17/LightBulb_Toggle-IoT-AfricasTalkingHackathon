@@ -4,12 +4,19 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url("pic_bulboff.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-size: 50%; /* Reduce image size to 50% */
     color: white;
-  }
-  
-  #message {
+}
+
+body.bulboff {
+    background: #020305 url("pic_bulboff.jpg") no-repeat center center fixed;
+}
+
+body.bulbon {
+    background: #000405 url("pic_bulbon.jpg") no-repeat center center fixed;
+}
+
+#message {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,5 +25,4 @@ body {
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 5px;
-  }
-  
+}
